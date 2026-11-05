@@ -90,6 +90,7 @@ OVERRIDES = [
     ("clotrimazol de 0,1 g", "Clotrimazol 100 mg comprimido vaginal"),
     ("adrenalina", "Adrenalina 1 mg/ml inyectable"),
     ("tobramicina", "Tobramicina 0,3% colirio"),
+    ("quetiapina (como fumarato de quetiapina) 200", "Quetiapina 200 mg comprimido de liberación prolongada"),
 ]
 
 def _cap(s):

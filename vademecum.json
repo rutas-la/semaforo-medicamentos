@@ -1,0 +1,2018 @@
+[
+{
+"n": "Acenocumarol 4 mg comprimido",
+"droga": "Acenocumarol",
+"forma": "Comprimido",
+"conc": "4 mg"
+},
+{
+"n": "Acetilcisteina 600 mg comprimido efervescente",
+"droga": "Acetilcisteina",
+"forma": "Comprimido efervescente",
+"conc": "600 mg"
+},
+{
+"n": "Aciclovir 200 mg comprimido",
+"droga": "Aciclovir",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Aciclovir 800 mg comprimido",
+"droga": "Aciclovir",
+"forma": "Comprimido",
+"conc": "800 mg"
+},
+{
+"n": "Aerocámara tipo aerospacer",
+"droga": "Aerocámara",
+"forma": "Tipo aerospacer.",
+"conc": ""
+},
+{
+"n": "Agujas para lapicera",
+"droga": "Agujas para lapicera",
+"forma": "",
+"conc": ""
+},
+{
+"n": "Alendronato 70 mg comprimido",
+"droga": "Alendronato",
+"forma": "Comprimido",
+"conc": "70 mg"
+},
+{
+"n": "Alopurinol 100 mg comprimido",
+"droga": "Alopurinol",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Alopurinol 300 mg comprimido",
+"droga": "Alopurinol",
+"forma": "Comprimido",
+"conc": "300 mg"
+},
+{
+"n": "Alprazolam 0,5 mg comprimido",
+"droga": "Alprazolam",
+"forma": "Comprimido",
+"conc": "0,5 mg"
+},
+{
+"n": "Alprazolam 1 mg comprimido",
+"droga": "Alprazolam",
+"forma": "Comprimido",
+"conc": "1 mg"
+},
+{
+"n": "Alprazolam 2 mg comprimido",
+"droga": "Alprazolam",
+"forma": "Comprimido",
+"conc": "2 mg"
+},
+{
+"n": "Ambroxol 15 mg/5 ml jarabe",
+"droga": "Ambroxol",
+"forma": "Jarabe",
+"conc": "15 mg / 5 ml"
+},
+{
+"n": "Amiodarona 200 mg comprimido ranurado",
+"droga": "Amiodarona",
+"forma": "Comprimido ranurado",
+"conc": "200 mg"
+},
+{
+"n": "Amitriptilina clorhidrato 25 mg comprimido",
+"droga": "Amitriptilina clorhidrato",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Amitriptilina clorhidrato 75 mg comprimido",
+"droga": "Amitriptilina clorhidrato",
+"forma": "Comprimido",
+"conc": "75 mg"
+},
+{
+"n": "Amlodipina 5 mg comprimido",
+"droga": "Amlodipina",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Amlodipina 10 mg comprimido",
+"droga": "Amlodipina",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Amoxicilina 500 mg comprimido",
+"droga": "Amoxicilina",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Amoxicilina 1000 mg comprimido",
+"droga": "Amoxicilina",
+"forma": "Comprimido",
+"conc": "1000 mg"
+},
+{
+"n": "Amoxicilina 500 mg/5 ml suspensión",
+"droga": "Amoxicilina",
+"forma": "Suspensión",
+"conc": "500 mg / 5 ml"
+},
+{
+"n": "Amoxicilina 250 mg/5 ml suspensión",
+"droga": "Amoxicilina",
+"forma": "Suspensión",
+"conc": "250 mg / 5 ml"
+},
+{
+"n": "Amoxicilina + ácido clavulánico 250 + 62,5 mg/5 ml suspensión",
+"droga": "Amoxicilina/Ac. Clavulánico",
+"forma": "Suspensión",
+"conc": "250 + 62,5 mg / 5 ml"
+},
+{
+"n": "Amoxicilina + ácido clavulánico 1000 mg + 125 mg comprimido",
+"droga": "Amoxicilina/Ac. Clavulánico",
+"forma": "Comprimido",
+"conc": "1000 mg  + 125 mg"
+},
+{
+"n": "Amoxicilina + ácido clavulánico 500 mg + 125 mg comprimido",
+"droga": "Amoxicilina/Ac. Clavulánico",
+"forma": "Comprimido",
+"conc": "500 mg + 125 mg"
+},
+{
+"n": "Amoxicilina + ácido clavulánico 850 mg + 125 mg comprimido",
+"droga": "Amoxicilina/Ac. Clavulánico",
+"forma": "Comprimido",
+"conc": "850 mg + 125 mg"
+},
+{
+"n": "Aripiprazol 5 mg comprimido",
+"droga": "Aripiprazol",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Aripiprazol 10 mg comprimido",
+"droga": "Aripiprazol",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Aspirina (ácido acetilsalicílico) 100 mg comprimido",
+"droga": "Aspirina",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Aspirina (ácido acetilsalicílico) 500 mg comprimido",
+"droga": "Aspirina",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Atenolol 25 mg comprimido",
+"droga": "Atenolol",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Atenolol 100 mg comprimido",
+"droga": "Atenolol",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Atenolol 50 mg comprimido",
+"droga": "Atenolol",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Atorvastatina 10 mg comprimido",
+"droga": "Atorvastatina",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Atorvastatina 20 mg comprimido",
+"droga": "Atorvastatina",
+"forma": "Comprimido",
+"conc": "20 mg"
+},
+{
+"n": "Azatioprina 50 mg comprimido",
+"droga": "Azatioprina",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Azitromicina 500 mg comprimido",
+"droga": "Azitromicina",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Azitromicina 200 mg/5 ml suspensión",
+"droga": "Azitromicina",
+"forma": "Suspensión",
+"conc": "200 mg / 5 ml"
+},
+{
+"n": "Baclofeno 10 mg comprimido",
+"droga": "Baclofeno",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Benznidazol 100 mg comprimido",
+"droga": "Benznidazol",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Betametasona 0,5% crema",
+"droga": "Betametasona",
+"forma": "Crema",
+"conc": "0.005"
+},
+{
+"n": "Betametasona 0,5 mg/ml gotas orales",
+"droga": "Betametasona",
+"forma": "Gotas Orales",
+"conc": "0,5 mg/ml"
+},
+{
+"n": "Betametasona 4 mg/ml inyectable",
+"droga": "Betametasona",
+"forma": "Inyectable",
+"conc": "4 mg/ml"
+},
+{
+"n": "Betametasona 6 + 6 mg/ml inyectable",
+"droga": "Betametasona",
+"forma": "Inyectable",
+"conc": "6 mg ACETATO + 6 mg FOSFATO"
+},
+{
+"n": "Betametasona 0,1% crema",
+"droga": "Betametasona",
+"forma": "Crema",
+"conc": "0.001"
+},
+{
+"n": "Betametasona + Gentamicina + Miconazol crema",
+"droga": "Betametasona + Gentamicina + Miconazol",
+"forma": "Crema",
+"conc": "Betametasona 0,1 % + Gentamicina 0,1 % + Miconazol 2 %"
+},
+{
+"n": "Biperideno 2 mg comprimido",
+"droga": "Biperideno",
+"forma": "Comprimido",
+"conc": "2 mg"
+},
+{
+"n": "Bisacodilo 5 mg comprimido",
+"droga": "Bisacodilio",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Bisoprolol 2,5 mg comprimido",
+"droga": "Bisoprolol",
+"forma": "Comprimido",
+"conc": "2,5 mg"
+},
+{
+"n": "Bromazepam 3 mg comprimido",
+"droga": "Bromazepam",
+"forma": "Comprimido",
+"conc": "3 mg"
+},
+{
+"n": "Bromazepam 6 mg comprimido",
+"droga": "Bromazepam",
+"forma": "Comprimido",
+"conc": "6 mg"
+},
+{
+"n": "Bromhexina clorhidrato 4 mg/5 ml jarabe",
+"droga": "Bromhexina clorhidrato",
+"forma": "Jarabe",
+"conc": "4 mg / 5 ml"
+},
+{
+"n": "Budesonida 200 mcg aerosol",
+"droga": "Budesonida",
+"forma": "Aerosol",
+"conc": "200 mcg"
+},
+{
+"n": "Budesonida 0,1% solución para nebulizar",
+"droga": "Budesonida",
+"forma": "Solución p/nebulizar",
+"conc": "0.001"
+},
+{
+"n": "Budesonida + formoterol 160/4,5 mcg aerosol",
+"droga": "Budesonida + formoterol",
+"forma": "Aerosol",
+"conc": "Budesonida 160 mcg + Formoterol 4,5 mcg/ dosis"
+},
+{
+"n": "Bupropión 150 mg comprimido de liberación prolongada",
+"droga": "Bupropión",
+"forma": "Comprimido LP",
+"conc": "150 mg"
+},
+{
+"n": "Butilhioscina (hioscina) 10 mg comprimido",
+"droga": "Butilhioscina",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Cabergolina 0,5 mg comprimido",
+"droga": "Cabergolina",
+"forma": "Comprimido",
+"conc": "0,5 mg"
+},
+{
+"n": "Calcitriol 0,25 mcg comprimido",
+"droga": "Calcitriol",
+"forma": "Comprimido",
+"conc": "0,25 mcg"
+},
+{
+"n": "Carbamazepina 200 mg comprimido",
+"droga": "Carbamazepina",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Carbamazepina 100 mg/5 ml jarabe",
+"droga": "Carbamazepina",
+"forma": "Jarabe",
+"conc": "100 mg / 5 ml"
+},
+{
+"n": "Carbinoxamina 0,8 mg/ml gotas orales",
+"droga": "Carbinoxamina",
+"forma": "Gotas Orales",
+"conc": "0,8 mg/ml"
+},
+{
+"n": "Carbón activado 250 mg comprimido",
+"droga": "Carbón activado",
+"forma": "Comprimido",
+"conc": "250 mg"
+},
+{
+"n": "Carbonato de calcio 500 mg comprimido",
+"droga": "Carbonato de calcio",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Carvedilol 3,125 mg comprimido",
+"droga": "Carvedilol",
+"forma": "Comprimido",
+"conc": "3,125 mg"
+},
+{
+"n": "Carvedilol 6,25 mg comprimido",
+"droga": "Carvedilol",
+"forma": "Comprimido",
+"conc": "6,25 mg"
+},
+{
+"n": "Carvedilol 12,5 mg comprimido",
+"droga": "Carvedilol",
+"forma": "Comprimido",
+"conc": "12,5 mg"
+},
+{
+"n": "Carvedilol 25 mg comprimido",
+"droga": "Carvedilol",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Cefadroxilo 500 mg comprimido",
+"droga": "Cefadroxilo",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Cefalexina 500 mg/5 ml suspensión",
+"droga": "Cefalexina",
+"forma": "Suspensión",
+"conc": "500 mg / 5 ml"
+},
+{
+"n": "Cefalexina 250 mg/5 ml suspensión",
+"droga": "Cefalexina",
+"forma": "Suspensión",
+"conc": "250 mg / 5 ml"
+},
+{
+"n": "Cefalexina 1000 mg comprimido",
+"droga": "Cefalexina",
+"forma": "Comprimido",
+"conc": "1000 mg"
+},
+{
+"n": "Cefalexina 500 mg comprimido",
+"droga": "Cefalexina",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Ceftriaxona 1000 mg frasco ampolla",
+"droga": "Ceftriaxona",
+"forma": "Frasco Ampolla",
+"conc": "1000 mg"
+},
+{
+"n": "Cefuroxima 500 mg comprimido",
+"droga": "Cefuroxima",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Cefuroxima 125 mg/5 ml suspensión",
+"droga": "Cefuroxima",
+"forma": "Suspensión",
+"conc": "125 mg / 5 ml"
+},
+{
+"n": "Cilostazol 50 mg comprimido",
+"droga": "Cilostazol",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Cilostazol 100 mg comprimido",
+"droga": "Cilostazol",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Ciprofloxacina 500 mg comprimido",
+"droga": "Ciprofloxacina",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Ciprofloxacina 3 mg/ml gotas oftálmicas",
+"droga": "Ciprofloxacina",
+"forma": "Gotas Oftálmicas",
+"conc": "3 mg/ml"
+},
+{
+"n": "Citalopram 20 mg comprimido",
+"droga": "Citalopram",
+"forma": "Comprimido",
+"conc": "20 mg"
+},
+{
+"n": "Claritromicina 250 mg comprimido",
+"droga": "Claritromicina",
+"forma": "Comprimido",
+"conc": "250 mg"
+},
+{
+"n": "Claritromicina 500 mg comprimido",
+"droga": "Claritromicina",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Claritromicina 125 mg/5 ml suspensión",
+"droga": "Claritromicina",
+"forma": "Suspensión",
+"conc": "125 mg / 5 ml"
+},
+{
+"n": "Claritromicina 250 mg/5 ml suspensión",
+"droga": "Claritromicina",
+"forma": "Suspensión",
+"conc": "250 mg / 5 ml"
+},
+{
+"n": "Clindamicina 300 mg cápsula",
+"droga": "Clindamicina",
+"forma": "Cápsula",
+"conc": "300 mg"
+},
+{
+"n": "Clobazam 10 mg comprimido",
+"droga": "Clobazam",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Clobazam 20 mg comprimido",
+"droga": "Clobazam",
+"forma": "Comprimido",
+"conc": "20 mg"
+},
+{
+"n": "Clomipramina 25 mg comprimido",
+"droga": "Clomipramina",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Clomipramina 75 mg comprimido",
+"droga": "Clomipramina",
+"forma": "Comprimido",
+"conc": "75 mg"
+},
+{
+"n": "Clonazepam 2,5 mg/ml gotas orales",
+"droga": "Clonazepam",
+"forma": "Gotas Orales",
+"conc": "2,5 mg/ml"
+},
+{
+"n": "Clonazepam 0,5 mg comprimido",
+"droga": "Clonazepam",
+"forma": "Comprimido",
+"conc": "0,5 mg"
+},
+{
+"n": "Clonazepam 2 mg comprimido",
+"droga": "Clonazepan",
+"forma": "Comprimido",
+"conc": "2 mg"
+},
+{
+"n": "Clonixinato de lisina 125 mg comprimido",
+"droga": "Clonixinato de lisina",
+"forma": "Comprimido",
+"conc": "125 mg"
+},
+{
+"n": "Clopidogrel 75 mg comprimido",
+"droga": "Clopidogrel",
+"forma": "Comprimido",
+"conc": "75 mg"
+},
+{
+"n": "Cloranfenicol + Colagenasa ungüento dérmico",
+"droga": "Cloranfenicol + Colagenasa",
+"forma": "Ungüento Dérmico",
+"conc": "1 gr + 60 UI"
+},
+{
+"n": "Cloroquina 100 mg comprimido",
+"droga": "Cloroquina",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Clotiapina 40 mg comprimido",
+"droga": "Clotiapina",
+"forma": "Comprimido",
+"conc": "40 mg"
+},
+{
+"n": "Clotrimazol 1% crema",
+"droga": "Clotrimazol",
+"forma": "Crema",
+"conc": "0.01"
+},
+{
+"n": "Clotrimazol 100 mg óvulo",
+"droga": "Clotrimazol",
+"forma": "Óvulo",
+"conc": "100 mg"
+},
+{
+"n": "Colchicina 1 mg comprimido",
+"droga": "Colchicina",
+"forma": "Comprimido",
+"conc": "1 mg"
+},
+{
+"n": "Cotrimoxazol (trimetoprima + sulfametoxazol) 40/200 mg/5 ml suspensión",
+"droga": "Cotrimoxazol",
+"forma": "Suspensión",
+"conc": "Trimetoprima 40 mg + Sulfametoxazol 200 mg / 5 ml"
+},
+{
+"n": "Cotrimoxazol (trimetoprima + sulfametoxazol) 80/400 mg comprimido",
+"droga": "Cotrimoxazol",
+"forma": "Comprimido",
+"conc": "Trimetoprima 80 mg + Sulfametoxazol 400 mg"
+},
+{
+"n": "Cotrimoxazol (trimetoprima + sulfametoxazol) 160/800 mg comprimido",
+"droga": "Cotrimoxazol",
+"forma": "Comprimido",
+"conc": "Trimetoprima 160 mg + Sulfametoxazol 800 mg"
+},
+{
+"n": "Dexametasona 4 mg/ml frasco ampolla",
+"droga": "Dexametasona",
+"forma": "Frasco Ampolla",
+"conc": "4 mg/ml"
+},
+{
+"n": "Diazepam 2 mg comprimido",
+"droga": "Diazepam",
+"forma": "Comprimido",
+"conc": "2 mg"
+},
+{
+"n": "Diazepam 5 mg comprimido",
+"droga": "Diazepam",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Diazepam 10 mg comprimido",
+"droga": "Diazepan",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Diclofenac sódico 50 mg comprimido",
+"droga": "Diclofenac sódico",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Diclofenac sódico 75 mg comprimido",
+"droga": "Diclofenac sódico",
+"forma": "Comprimido",
+"conc": "75 mg"
+},
+{
+"n": "Difenhidramina 50 mg comprimido",
+"droga": "Difenhidramina",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Difenhidramina 2,5 mg/ml suspensión",
+"droga": "Difenhidramina",
+"forma": "Suspensión",
+"conc": "2,5 mg/ml"
+},
+{
+"n": "Digoxina 0,25 mg comprimido",
+"droga": "Digoxina",
+"forma": "Comprimido",
+"conc": "0,25 mg"
+},
+{
+"n": "Digoxina 0,75 mg/ml gotas orales",
+"droga": "Digoxina",
+"forma": "Gotas Orales",
+"conc": "0,75 mg/ml"
+},
+{
+"n": "Diltiazem 60 mg comprimido",
+"droga": "Diltiazem",
+"forma": "Comprimido",
+"conc": "60 mg"
+},
+{
+"n": "Diltiazem 90 mg comprimido",
+"droga": "Diltiazem",
+"forma": "Comprimido",
+"conc": "90 mg"
+},
+{
+"n": "Diltiazem 180 mg comprimido",
+"droga": "Diltiazem",
+"forma": "Comprimido",
+"conc": "180 mg"
+},
+{
+"n": "Dimenhidrinato 50 mg comprimido",
+"droga": "Dimenhidrinato",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Divalproato de sodio 250 mg comprimido",
+"droga": "Divalproato de sodio",
+"forma": "Comprimido",
+"conc": "250 mg"
+},
+{
+"n": "Divalproato de sodio 500 mg comprimido",
+"droga": "Divalproato de sodio",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Domperidona 10 mg comprimido",
+"droga": "Domperidona",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Domperidona 1 mg/ml gotas orales",
+"droga": "Domperidona",
+"forma": "Gotas Orales",
+"conc": "1 mg/ml"
+},
+{
+"n": "Dorzolamida 2% gotas oftálmicas",
+"droga": "Dorzolamida",
+"forma": "Gotas Oftálmicas",
+"conc": "0.02"
+},
+{
+"n": "Doxiciclina 100 mg comprimido",
+"droga": "Doxiciclina",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Enalapril 2,5 mg comprimido",
+"droga": "Enalapril",
+"forma": "Comprimido",
+"conc": "2,5 mg"
+},
+{
+"n": "Enalapril 5 mg comprimido",
+"droga": "Enalapril",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Enalapril 10 mg comprimido",
+"droga": "Enalapril",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Eritromicina 1% gotas oftálmicas",
+"droga": "Eritromicina",
+"forma": "Gotas Oftálmicas",
+"conc": "0.01"
+},
+{
+"n": "Eritromicina 500 mg comprimido",
+"droga": "Eritromicina",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Eritromicina 200 mg/5 ml suspensión",
+"droga": "Eritromicina",
+"forma": "Suspensión",
+"conc": "200 mg / 5 ml"
+},
+{
+"n": "Eritromicina 0,5 mg ungüento oftálmico",
+"droga": "Eritromicina",
+"forma": "Ungüento Oftalmico",
+"conc": "0,5 mg"
+},
+{
+"n": "Espironolactona 25 mg comprimido",
+"droga": "Espironolactona",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Espironolactona 100 mg comprimido",
+"droga": "Espironolactona",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Ezetimibe 10 mg comprimido",
+"droga": "Ezetmibe",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Fenitoína cálcica 100 mg comprimido",
+"droga": "Fenitoína cálcica",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Fenitoína sódica 100 mg comprimido",
+"droga": "Fenitoína sódica",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Fenitoína sódica 2,5% x 120 ml suspensión",
+"droga": "Fenitoína sódica",
+"forma": "Suspensión",
+"conc": "2,5% x 120 ml"
+},
+{
+"n": "Fenoximetilpenicilina 1500000 UI comprimido",
+"droga": "Fenoximetilpenicilina",
+"forma": "Comprimido",
+"conc": "1500000 UI"
+},
+{
+"n": "Fenoximetilpenicilina 300000 UI/5 ml suspensión",
+"droga": "Fenoximetilpenicilina",
+"forma": "Suspensión",
+"conc": "300000 UI/5 ml"
+},
+{
+"n": "Finasteride 5 mg comprimido",
+"droga": "Finasteride",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Fluconazol 100 mg comprimido",
+"droga": "Fluconazol",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Fluconazol 150 mg comprimido",
+"droga": "Fluconazol",
+"forma": "Comprimido",
+"conc": "150 mg"
+},
+{
+"n": "Fluconazol 200 mg comprimido",
+"droga": "Fluconazol",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Fluoxetina 10 mg comprimido",
+"droga": "Fluoxetina",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Fluoxetina 20 mg comprimido",
+"droga": "Fluoxetina",
+"forma": "Comprimido",
+"conc": "20 mg"
+},
+{
+"n": "Fluticasona propionato 125 mcg/ds aerosol",
+"droga": "Fluticasona propionato",
+"forma": "Aerosol",
+"conc": "125 mcg/ds"
+},
+{
+"n": "Fluticasona propionato 250 mcg/ds aerosol",
+"droga": "Fluticasona propionato",
+"forma": "Aerosol",
+"conc": "250 mcg/ds"
+},
+{
+"n": "Ácido fólico 1 mg comprimido",
+"droga": "Fólico, ácido",
+"forma": "Comprimido",
+"conc": "1 mg"
+},
+{
+"n": "Ácido fólico 5 mg comprimido",
+"droga": "Fólico, ácido",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Ácido fólico 10 mg comprimido",
+"droga": "Fólico, ácido",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Furosemida 40 mg comprimido",
+"droga": "Furosemida",
+"forma": "Comprimido",
+"conc": "40 mg"
+},
+{
+"n": "Gabapentina 300 mg comprimido",
+"droga": "Gabapentina",
+"forma": "Comprimido",
+"conc": "300 mg"
+},
+{
+"n": "Gabapentina 100 mg comprimido",
+"droga": "Gabapentina",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Gabapentina 400 mg comprimido",
+"droga": "Gabapentina",
+"forma": "Comprimido",
+"conc": "400 mg"
+},
+{
+"n": "Gabapentina 600 mg comprimido",
+"droga": "Gabapentina",
+"forma": "Comprimido",
+"conc": "600 mg"
+},
+{
+"n": "Gemfibrozil 600 mg comprimido",
+"droga": "Gemfibrozil",
+"forma": "Comprimido",
+"conc": "600 mg"
+},
+{
+"n": "Gentamicina 0,1% crema",
+"droga": "Gentamicina",
+"forma": "Crema",
+"conc": "0.001"
+},
+{
+"n": "Glibenclamida 5 mg comprimido",
+"droga": "Glibenclamida",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Gliclazida 80 mg comprimido",
+"droga": "Gliclazida",
+"forma": "Comprimido",
+"conc": "80 mg"
+},
+{
+"n": "Glimepirida 4 mg comprimido",
+"droga": "Glimepirida",
+"forma": "Comprimido",
+"conc": "4 mg"
+},
+{
+"n": "Glucagon 1 mg/ml frasco ampolla",
+"droga": "Glucagon",
+"forma": "Frasco Ampolla",
+"conc": "1 mg/ml"
+},
+{
+"n": "Haloperidol 2 mg/ml gotas orales",
+"droga": "Haloperidol",
+"forma": "Gotas Orales",
+"conc": "2 mg/ml"
+},
+{
+"n": "Haloperidol decanoato 50 mg/ml ampolla",
+"droga": "Haloperidol, decanoato",
+"forma": "Ampolla",
+"conc": "50 mg/ml"
+},
+{
+"n": "Haloperidol 1 mg comprimido",
+"droga": "Haloperidol",
+"forma": "Comprimido",
+"conc": "1 mg"
+},
+{
+"n": "Haloperidol 5 mg comprimido",
+"droga": "Haloperidol",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Haloperidol 10 mg comprimido",
+"droga": "Haloperidol",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Hidroclorotiazida 50 mg comprimido",
+"droga": "Hidroclorotiazida",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Hidroclorotiazida + Amiloride 50/5 mg comprimido",
+"droga": "Hidroclorotiazida + Amiloride",
+"forma": "Comprimido",
+"conc": "Hidroclorotiazida 50 + Amiloride 5 mg"
+},
+{
+"n": "Hidrocortisona 100 mg frasco ampolla",
+"droga": "Hidrocortisona",
+"forma": "Frasco Ampolla",
+"conc": "100 mg"
+},
+{
+"n": "Hidrocortisona 500 mg frasco ampolla",
+"droga": "Hidrocortisona",
+"forma": "Frasco Ampolla",
+"conc": "500 mg"
+},
+{
+"n": "Hidrocortisona 10 mg comprimido",
+"droga": "Hidrocortisona",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Hidrocortisona 0,5% crema",
+"droga": "Hidrocortisona",
+"forma": "Crema",
+"conc": "0.005"
+},
+{
+"n": "Hidrocortisona 1% crema",
+"droga": "Hidrocortisona",
+"forma": "Crema",
+"conc": "0.01"
+},
+{
+"n": "Hidroxicloroquina 200 mg comprimido",
+"droga": "Hidroxicloroquina",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Fumarato ferroso 330 mg comprimido",
+"droga": "Hierro, fumarato",
+"forma": "Comprimido",
+"conc": "330 mg"
+},
+{
+"n": "Sulfato ferroso 12,5 g/100ml gotas orales",
+"droga": "Hierro, sulfato",
+"forma": "Gotas Orales",
+"conc": "12,5 g / 100ml"
+},
+{
+"n": "Sulfato ferroso 525 mg comprimido",
+"droga": "Hierro, sulfato",
+"forma": "Comprimido",
+"conc": "525 mg"
+},
+{
+"n": "Sulfato ferroso + ácido fólico 525/0,35 mg comprimido",
+"droga": "Hierro, sulfato + fólico, ácido",
+"forma": "Comprimido",
+"conc": "Hierro, sulfato 525 mg + Fólico, ácido 0,35 mg"
+},
+{
+"n": "Ibuprofeno 400 mg comprimido",
+"droga": "Ibuprofeno",
+"forma": "Comprimido",
+"conc": "400 mg"
+},
+{
+"n": "Ibuprofeno 600 mg comprimido",
+"droga": "Ibuprofeno",
+"forma": "Comprimido",
+"conc": "600 mg"
+},
+{
+"n": "Ibuprofeno 2% suspensión",
+"droga": "Ibuprofeno",
+"forma": "Suspensión",
+"conc": "0.02"
+},
+{
+"n": "Imipramina 25 mg comprimido",
+"droga": "Imipramina",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Insulina NPH 100 UI/ml lapicera",
+"droga": "Insulina humana de acción intermedia (NPH)",
+"forma": "Lapicera Prellenada",
+"conc": "100 UI/ml x 3 ml"
+},
+{
+"n": "Insulina NPH 100 UI/ml frasco ampolla",
+"droga": "Insulina humana de acción intermedia (NPH)",
+"forma": "Frasco Ampolla",
+"conc": "100 UI/ml x 10 ml"
+},
+{
+"n": "Insulina corriente 100 UI/ml cartucho",
+"droga": "Insulina humana de acción rápida ( Corriente)",
+"forma": "Cartucho",
+"conc": "100 UI/ml x 3 ml"
+},
+{
+"n": "Insulina corriente 100 UI/ml frasco ampolla",
+"droga": "Insulina humana de acción rápida ( Corriente)",
+"forma": "Frasco Ampolla",
+"conc": "100 UI/ml x 10 ml"
+},
+{
+"n": "Bromuro de ipratropio 0,25 mg/ml solución para nebulizar",
+"droga": "Ipratropio, bromuro",
+"forma": "Solución p/nebulizar",
+"conc": "0,25 mg/ml"
+},
+{
+"n": "Dinitrato de isosorbide 5 mg comprimido sublingual",
+"droga": "Isosorbide, dinitrato",
+"forma": "Comprimido Sublingual",
+"conc": "5 mg"
+},
+{
+"n": "Mononitrato de isosorbide 20 mg comprimido",
+"droga": "Isosorbide, mononitrato",
+"forma": "Comprimido",
+"conc": "20 mg"
+},
+{
+"n": "Itraconazol 100 mg comprimido",
+"droga": "Itraconazol",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Ivermectina 6 mg comprimido",
+"droga": "Ivermectina",
+"forma": "Comprimido",
+"conc": "6 mg"
+},
+{
+"n": "Jeringas para insulina",
+"droga": "Jeringas para insulina",
+"forma": "Unidad",
+"conc": ""
+},
+{
+"n": "Ketoconazol 2% crema",
+"droga": "Ketoconazol",
+"forma": "Crema",
+"conc": "0.02"
+},
+{
+"n": "Lactulosa 650 mg/ml solución oral",
+"droga": "Lactulosa",
+"forma": "Solución Oral",
+"conc": "650 mg/ml"
+},
+{
+"n": "Lamotrigina 5 mg comprimido",
+"droga": "Lamotrigina",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Lamotrigina 25 mg comprimido",
+"droga": "Lamotrigina",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Lamotrigina 50 mg comprimido",
+"droga": "Lamotrigina",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Lamotrigina 100 mg comprimido",
+"droga": "Lamotrigina",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Lancetas",
+"droga": "Lancetas",
+"forma": "",
+"conc": ""
+},
+{
+"n": "Latanoprost 50 mcg/ml gotas oftálmicas",
+"droga": "Latanoprost",
+"forma": "Gotas Oftálmicas",
+"conc": "50 mcg/ml"
+},
+{
+"n": "Levetiracetam 500 mg comprimido",
+"droga": "Levetiracetam",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Levodopa + benserazida 200/50 mg comprimido",
+"droga": "Levodopa + benserazida",
+"forma": "Comprimido",
+"conc": "Levodopa 200 mg + Benserazida 50 mg"
+},
+{
+"n": "Levodopa + carbidopa 250/25 mg comprimido",
+"droga": "Levodopa + carbidopa",
+"forma": "Comprimido",
+"conc": "Levodopa 250 mg + Carbidopa 25 mg"
+},
+{
+"n": "Levofloxacina 500 mg comprimido",
+"droga": "Levofloxacina",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Levomepromazina 25 mg comprimido",
+"droga": "Levomepromazina",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Levotiroxina sodica 25 mcg comprimido",
+"droga": "Levotiroxina sodica",
+"forma": "Comprimido",
+"conc": "25 mcg"
+},
+{
+"n": "Levotiroxina sodica 50 mcg comprimido",
+"droga": "Levotiroxina sodica",
+"forma": "Comprimido",
+"conc": "50 mcg"
+},
+{
+"n": "Levotiroxina sodica 125 mcg comprimido",
+"droga": "Levotiroxina sodica",
+"forma": "Comprimido",
+"conc": "125 mcg"
+},
+{
+"n": "Levotiroxina sodica 100 mcg comprimido",
+"droga": "Levotiroxina sodica",
+"forma": "Comprimido",
+"conc": "100 mcg"
+},
+{
+"n": "Levotiroxina sodica 112 mcg comprimido",
+"droga": "Levotiroxina sodica",
+"forma": "Comprimido",
+"conc": "112 mcg"
+},
+{
+"n": "Linagliptina 5 mg comprimido",
+"droga": "Linagliptina",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Carbonato de litio 300 mg comprimido",
+"droga": "Litio, carbonato",
+"forma": "Comprimido",
+"conc": "300 mg"
+},
+{
+"n": "Carbonato de litio 450 mg comprimido de liberación prolongada",
+"droga": "Litio, carbonato",
+"forma": "Comprimido LP",
+"conc": "450 mg"
+},
+{
+"n": "Loperamida 2 mg comprimido",
+"droga": "Loperamida",
+"forma": "Comprimido",
+"conc": "2 mg"
+},
+{
+"n": "Loratadina 10 mg comprimido",
+"droga": "Loratadina",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Loratadina + Betametasona 10/0,6 mg comprimido",
+"droga": "Loratadina + Betametasona",
+"forma": "Comprimido",
+"conc": "Loratadina 10 mg + Betametasona 0,6 mg"
+},
+{
+"n": "Lorazepam 2,5 mg comprimido",
+"droga": "Lorazepam",
+"forma": "Comprimido",
+"conc": "2,5 mg"
+},
+{
+"n": "Lorazepam 2 mg comprimido sublingual",
+"droga": "Lorazepam",
+"forma": "Comprimido Sublingual",
+"conc": "2 mg"
+},
+{
+"n": "Lorazepam 1 mg comprimido",
+"droga": "Lorazepam",
+"forma": "Comprimido",
+"conc": "1 mg"
+},
+{
+"n": "Losartán 50 mg comprimido",
+"droga": "Losartan potásico",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Mebendazol 100 mg/5 ml suspensión",
+"droga": "Mebendazol",
+"forma": "Suspensión",
+"conc": "100 mg / 5 ml"
+},
+{
+"n": "Mebendazol 200 mg/5 ml suspensión",
+"droga": "Mebendazol",
+"forma": "Suspensión",
+"conc": "200 mg / 5 ml"
+},
+{
+"n": "Mebendazol 100 mg comprimido",
+"droga": "Mebendazol",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Mebendazol 200 mg comprimido",
+"droga": "Mebendazol",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Mebendazol + tinidazol 200/200 mg comprimido",
+"droga": "Mebendazol + tinidazol",
+"forma": "Comprimido",
+"conc": "Tinindazol 200 mg + Mebendazol 200 mg"
+},
+{
+"n": "Mebendazol + tinidazol 200/200 mg suspensión",
+"droga": "Mebendazol + tinidazol",
+"forma": "Suspensión",
+"conc": "Tinindazol 200 mg + Mebendazol 200 mg / 5 ml"
+},
+{
+"n": "Meprednisona 40 mg comprimido",
+"droga": "Meprednisona",
+"forma": "Comprimido",
+"conc": "40 mg"
+},
+{
+"n": "Meprednisona 8 mg comprimido",
+"droga": "Meprednisona",
+"forma": "Comprimido",
+"conc": "8 mg"
+},
+{
+"n": "Meprednisona 4 mg comprimido",
+"droga": "Meprednisona",
+"forma": "Comprimido",
+"conc": "4 mg"
+},
+{
+"n": "Meprednisona 0,4% gotas orales",
+"droga": "Meprednisona",
+"forma": "Gotas Orales",
+"conc": "0.004"
+},
+{
+"n": "Metformina 500 mg comprimido",
+"droga": "Metformina",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Metformina 850 mg comprimido",
+"droga": "Metformina",
+"forma": "Comprimido",
+"conc": "850 mg"
+},
+{
+"n": "Metformina 1000 mg comprimido",
+"droga": "Metformina",
+"forma": "Comprimido",
+"conc": "1000 mg"
+},
+{
+"n": "Metildopa 500 mg comprimido",
+"droga": "Metil dopa",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Metimazol 5 mg comprimido",
+"droga": "Metimazol",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Metimazol 20 mg comprimido",
+"droga": "Metimazol",
+"forma": "Comprimido",
+"conc": "20 mg"
+},
+{
+"n": "Metoclopramida 10 mg comprimido",
+"droga": "Metoclopramida",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Metoclopramida 0,5% gotas orales",
+"droga": "Metoclopramida",
+"forma": "Gotas Orales",
+"conc": "0.005"
+},
+{
+"n": "Metoclopramida 0,2% gotas orales",
+"droga": "Metoclopramida",
+"forma": "Gotas Orales",
+"conc": "0.002"
+},
+{
+"n": "Metotrexato 2,5 mg comprimido",
+"droga": "Metotrexato",
+"forma": "Comprimido",
+"conc": "2,5 mg"
+},
+{
+"n": "Metotrexato 7,5 mg comprimido",
+"droga": "Metotrexato",
+"forma": "Comprimido",
+"conc": "7,5 mg"
+},
+{
+"n": "Metotrexato 10 mg comprimido",
+"droga": "Metotrexato",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Metronidazol 500 mg óvulo",
+"droga": "Metronidazol",
+"forma": "Óvulo",
+"conc": "500 mg"
+},
+{
+"n": "Metronidazol 500 mg comprimido",
+"droga": "Metronidazol",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Metronidazol 125 mg/5 ml suspensión",
+"droga": "Metronidazol",
+"forma": "Suspensión",
+"conc": "125 mg / 5 ml"
+},
+{
+"n": "Metronidazol + nistatina 500 mg/100.000 UI óvulo",
+"droga": "Metronidazol + nistatina",
+"forma": "Óvulo",
+"conc": "Metronidazol 500 mg + Nistatina 100000 UI"
+},
+{
+"n": "Mirtazapina 30 mg comprimido",
+"droga": "Mirtazapina",
+"forma": "Comprimido",
+"conc": "30 mg"
+},
+{
+"n": "Mupirocina 2% crema",
+"droga": "Mupirocina",
+"forma": "Crema",
+"conc": "0.02"
+},
+{
+"n": "Naproxeno 500 mg comprimido",
+"droga": "Naproxeno",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Nifedipina 10 mg comprimido",
+"droga": "Nifedipina",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Nifedipina 30 mg comprimido",
+"droga": "Nifedipina",
+"forma": "Comprimido",
+"conc": "30 mg"
+},
+{
+"n": "Nimodipina 30 mg comprimido",
+"droga": "Nimodipina",
+"forma": "Comprimido",
+"conc": "30 mg"
+},
+{
+"n": "Nimodipina 60 mg comprimido",
+"droga": "Nimodipina",
+"forma": "Comprimido",
+"conc": "60 mg"
+},
+{
+"n": "Nistatina 100.000 UI/ml suspensión",
+"droga": "Nistatina",
+"forma": "Suspensión",
+"conc": "100.000 UI / ml"
+},
+{
+"n": "Nistatina 100.000 UI óvulo",
+"droga": "Nistatina",
+"forma": "Óvulo",
+"conc": "100.000 UI"
+},
+{
+"n": "Nitrofurantoina 100 mg comprimido",
+"droga": "Nitrofurantoina",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Nitrofurantoina 25 mg/5 ml suspensión",
+"droga": "Nitrofurantoina",
+"forma": "Suspensión",
+"conc": "25 mg / 5 ml"
+},
+{
+"n": "Norfloxacina 400 mg comprimido",
+"droga": "Norfloxacina",
+"forma": "Comprimido",
+"conc": "400 mg"
+},
+{
+"n": "Ofloxacina 0,3% gotas oftálmicas",
+"droga": "Ofloxacina",
+"forma": "Gotas Oftálmicas",
+"conc": "0.003"
+},
+{
+"n": "Ofloxacina 200 mg comprimido",
+"droga": "Ofloxacina",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Olanzapina 5 mg comprimido",
+"droga": "Olanzapina",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Olanzapina 10 mg comprimido",
+"droga": "Olanzapina",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Omeprazol 20 mg comprimido",
+"droga": "Omeprazol",
+"forma": "Comprimido",
+"conc": "20 mg"
+},
+{
+"n": "Oxcarbacepina 300 mg comprimido",
+"droga": "Oxcarbacepina",
+"forma": "Comprimido",
+"conc": "300 mg"
+},
+{
+"n": "Oxcarbacepina 600 mg comprimido",
+"droga": "Oxcarbacepina",
+"forma": "Comprimido",
+"conc": "600 mg"
+},
+{
+"n": "Oxibutinina 5 mg comprimido",
+"droga": "Oxibutinina",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Paracetamol 100 mg/ml gotas orales",
+"droga": "Paracetamol",
+"forma": "Gotas Orales",
+"conc": "100 mg/ml"
+},
+{
+"n": "Paracetamol 500 mg comprimido",
+"droga": "Paracetamol",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Paracetamol 1000 mg comprimido",
+"droga": "Paracetamol",
+"forma": "Comprimido",
+"conc": "1000 mg"
+},
+{
+"n": "Paroxetina 20 mg comprimido",
+"droga": "Paroxetina",
+"forma": "Comprimido",
+"conc": "20 mg"
+},
+{
+"n": "Penicilina G benzatínica 2.400.000 UI frasco ampolla",
+"droga": "Penicilina G benzatínica",
+"forma": "Frasco Ampolla",
+"conc": "2.400.000 UI"
+},
+{
+"n": "Pentoxifilina 400 mg comprimido",
+"droga": "Pentoxifilina",
+"forma": "Comprimido",
+"conc": "400 mg"
+},
+{
+"n": "Permetrina 10 mg/ml loción tópica",
+"droga": "Permetrina",
+"forma": "Loción Tópica",
+"conc": "10 mg/ml"
+},
+{
+"n": "Permetrina + Bencilo, benzoato + Benzocaína emulsión",
+"droga": "Permetrina + Bencilo, benzoato + Benzocaína",
+"forma": "Emulsión",
+"conc": "Permetrina 2,50 % + bencilo, benzoato 11,40 % + benzocaina 2 %"
+},
+{
+"n": "Pilocarpina clorhidrato 1% gotas oftálmicas",
+"droga": "Pilocarpina clorhidrato",
+"forma": "Gotas Oftálmicas",
+"conc": "0.01"
+},
+{
+"n": "Pilocarpina clorhidrato 2% gotas oftálmicas",
+"droga": "Pilocarpina clorhidrato",
+"forma": "Gotas Oftálmicas",
+"conc": "0.02"
+},
+{
+"n": "Piridostigmina 60 mg comprimido",
+"droga": "Piridostigmina",
+"forma": "Comprimido",
+"conc": "60 mg"
+},
+{
+"n": "Potasio gluconato 31,2 % x 150 ml elixir",
+"droga": "Potasio gluconato",
+"forma": "Elixir",
+"conc": "31,2 % x 150 ml"
+},
+{
+"n": "Prednisona 5 mg comprimido",
+"droga": "Prednisona",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Pregabalina 75 mg cápsula",
+"droga": "Pregabalina",
+"forma": "Cápsula",
+"conc": "75 mg"
+},
+{
+"n": "Prometazina 25 mg comprimido",
+"droga": "Prometazina",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Propranolol clorhidrato 40 mg comprimido",
+"droga": "Propranolol clorhidrato",
+"forma": "Comprimido",
+"conc": "40 mg"
+},
+{
+"n": "Quetiapina 25 mg comprimido",
+"droga": "Quetiapina",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Quetiapina 100 mg comprimido",
+"droga": "Quetiapina",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Quetiapina 200 mg comprimido",
+"droga": "Quetiapina",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Ranitidina 75 mg/5 ml suspensión",
+"droga": "Ranitidina",
+"forma": "Suspensión",
+"conc": "75 mg / 5 ml"
+},
+{
+"n": "Risperidona 0,5 mg comprimido",
+"droga": "Risperidona",
+"forma": "Comprimido",
+"conc": "0,5 mg"
+},
+{
+"n": "Risperidona 1 mg comprimido",
+"droga": "Risperidona",
+"forma": "Comprimido",
+"conc": "1 mg"
+},
+{
+"n": "Risperidona 1 mg/ml gotas orales",
+"droga": "Risperidona",
+"forma": "Gotas Orales",
+"conc": "1 mg/ml"
+},
+{
+"n": "Risperidona 2 mg comprimido",
+"droga": "Risperidona",
+"forma": "Comprimido",
+"conc": "2 mg"
+},
+{
+"n": "Risperidona 3 mg comprimido",
+"droga": "Risperidona",
+"forma": "Comprimido",
+"conc": "3 mg"
+},
+{
+"n": "Salbutamol 0,5% solución para nebulizar",
+"droga": "Salbutamol",
+"forma": "Solución p/nebulizar",
+"conc": "0.005"
+},
+{
+"n": "Salbutamol 100 mcg/dosis aerosol",
+"droga": "Salbutamol",
+"forma": "Aerosol",
+"conc": "100 mcg/dosis"
+},
+{
+"n": "Sales de rehidratación oral sobre",
+"droga": "Sales de rehidratación oral",
+"forma": "Sobre",
+"conc": "De 3,5 g de Sodio, cloruro + 1,5 g Potasio, cloruro + 2,5 g bicarbonato de sodio + 20 g de glucosa anhidra, polvo para solución , en sobre de\n27,5 g"
+},
+{
+"n": "Salmeterol + fluticasona 25/125 mcg aerosol",
+"droga": "Salmeterol y fluticasona propionato",
+"forma": "Aerosol",
+"conc": "Salmeterol 25 - Fluticasona 125) mcg/ds"
+},
+{
+"n": "Salmeterol + fluticasona 50/250 mcg cápsulas para inhalar",
+"droga": "Salmeterol y fluticasona propionato",
+"forma": "Cápsulas ( polvo para inhalar)",
+"conc": "Salmeterol 50 - Fluticasona 250) mcg/ds"
+},
+{
+"n": "Salmeterol + fluticasona 50/500 mcg cápsulas para inhalar",
+"droga": "Salmeterol y fluticasona propionato",
+"forma": "Cápsulas ( polvo para inhalar)",
+"conc": "Salmeterol 50 - Fluticasona 500) mcg/ds"
+},
+{
+"n": "Sertralina 50 mg comprimido",
+"droga": "Sertralina",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Sertralina 100 mg comprimido",
+"droga": "Sertralina",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Simeticona 200 mg comprimido",
+"droga": "Simeticona",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Simvastatina 10 mg comprimido",
+"droga": "Simvastatina",
+"forma": "Comprimido",
+"conc": "10 mg"
+},
+{
+"n": "Sucralfato 1000 mg/5 ml solución oral",
+"droga": "Sucralfato",
+"forma": "Solución Oral",
+"conc": "1000 mg / 5 ml"
+},
+{
+"n": "Sulfadiazina de plata + vitamina A + lidocaína crema",
+"droga": "Sulfadiazina de plata+ Vitamina A + Lidocaína",
+"forma": "Crema",
+"conc": "De 1 g + vitamina A 248.000 UI + lidocaína 0,666 g Crema x 30 g"
+},
+{
+"n": "Sulfadiazina de plata + vitamina A + lidocaína apósito",
+"droga": "Sulfadiazina de plata+ Vitamina A + Lidocaína",
+"forma": "Aposito",
+"conc": "apósitos"
+},
+{
+"n": "Tamsulosina 0,4 mg cápsula de liberación prolongada",
+"droga": "Tamsulosina",
+"forma": "Cápsula LP",
+"conc": "0,4 mg"
+},
+{
+"n": "Terazosina 5 mg comprimido",
+"droga": "Terazosina",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Terbinafina 250 mg comprimido",
+"droga": "Terbinafina",
+"forma": "Comprimido",
+"conc": "250 mg"
+},
+{
+"n": "Tiabendazol 500 mg comprimido",
+"droga": "Tiabendazol",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Timolol 0,5% gotas oftálmicas",
+"droga": "Timolol",
+"forma": "Gotas Oftálmicas",
+"conc": "0.005"
+},
+{
+"n": "Ácido tióctico 600 mg cápsula",
+"droga": "Tióctico, ácido",
+"forma": "Cápsula",
+"conc": "600 mg"
+},
+{
+"n": "Tiras reactivas para determinación de glucemia",
+"droga": "Tiras reactivas para determinación de glucemia",
+"forma": "Unidad",
+"conc": ""
+},
+{
+"n": "Tobramicina 0,3% gotas oftálmicas",
+"droga": "Tobramicina",
+"forma": "Gotas Oftálmicas",
+"conc": "0.003"
+},
+{
+"n": "Tobramicina + dexametasona 0,3% + 0,1% gotas oftálmicas",
+"droga": "Tobramicina + dexametasona",
+"forma": "Gotas Oftálmicas",
+"conc": "Cada 100 ml: Tobramicina 300 mg + dexametasona 100 mg x 5 ml"
+},
+{
+"n": "Topiramato 25 mg comprimido",
+"droga": "Topiramato",
+"forma": "Comprimido",
+"conc": "25 mg"
+},
+{
+"n": "Topiramato 50 mg comprimido",
+"droga": "Topiramato",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Topiramato 100 mg comprimido",
+"droga": "Topiramato",
+"forma": "Comprimido",
+"conc": "100 mg"
+},
+{
+"n": "Tramadol 50 mg comprimido",
+"droga": "Tramadol",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Tramadol 5% gotas orales",
+"droga": "Tramadol",
+"forma": "Gotas Orales",
+"conc": "0.05"
+},
+{
+"n": "Trimebutina 200 mg comprimido",
+"droga": "Trimebutina",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Ácido ursodesoxicólico 300 mg comprimido",
+"droga": "Ursodesoxicólico, Acido",
+"forma": "Comprimido",
+"conc": "300 mg"
+},
+{
+"n": "Valproato de magnesio 200 mg comprimido",
+"droga": "Valproato de magnesio",
+"forma": "Comprimido",
+"conc": "200 mg"
+},
+{
+"n": "Valproato de magnesio 400 mg comprimido",
+"droga": "Valproato de magnesio",
+"forma": "Comprimido",
+"conc": "400 mg"
+},
+{
+"n": "Ácido valproico 250 mg/5 ml jarabe",
+"droga": "Valproico, ácido",
+"forma": "Jarabe",
+"conc": "250 mg / 5 ml"
+},
+{
+"n": "Venlafaxina 50 mg comprimido",
+"droga": "Venlafaxina",
+"forma": "Comprimido",
+"conc": "50 mg"
+},
+{
+"n": "Venlafaxina 75 mg comprimido",
+"droga": "Venlafaxina",
+"forma": "Comprimido",
+"conc": "75 mg"
+},
+{
+"n": "Verapamilo 80 mg comprimido",
+"droga": "Verapamilo",
+"forma": "Comprimido",
+"conc": "80 mg"
+},
+{
+"n": "Vigabatrin 500 mg comprimido",
+"droga": "Vigabatrin",
+"forma": "Comprimido",
+"conc": "500 mg"
+},
+{
+"n": "Vitamina A + C + D gotas",
+"droga": "Vitamina A + C + D",
+"forma": "Gotas",
+"conc": "Cada 0,6 ml: vitamina A 5000 UI, Vitamina D 1000 UI , Vitamina C 50 mg"
+},
+{
+"n": "Complejo vitamínico B comprimido",
+"droga": "Vitamina B, complejo Vit.B1 + Vit.B2 + Vit. B6 +Vit. B12",
+"forma": "Comprimido",
+"conc": "Vit.B1 15 mg + Vit.B2 15 mg + Vit. B6 10 mg +Vit. B12 0.01 mg"
+},
+{
+"n": "Complejo vitamínico B frasco ampolla",
+"droga": "Vitamina B, complejo Vit.B1 + Vit.B2 + Vit. B6 +Vit. B13",
+"forma": "Frasco Ampolla",
+"conc": "Hidroxicobalamina 10.000 ug, tiamina clorhidrato 100 mg, piridoxina clorhidrato 200 mg :lidocaína clorhidrato 20 mg"
+},
+{
+"n": "Vitamina D2 400 UI por gota solución",
+"droga": "Vitamina D2",
+"forma": "Solución",
+"conc": "Cada 100 ml : 25 mg Cada gota contiene aproximadamente 400 UI"
+},
+{
+"n": "Vitamina D3 500 UI por gota solución",
+"droga": "Vitamina D3",
+"forma": "Solución",
+"conc": "500 UI por gota"
+},
+{
+"n": "Vitamina D3 1 mcg cápsula",
+"droga": "Vitamina D3",
+"forma": "Cápsula",
+"conc": "1 mcg"
+},
+{
+"n": "Warfarina sódica 2 mg comprimido",
+"droga": "Warfarina sódica",
+"forma": "Comprimido",
+"conc": "2 mg"
+},
+{
+"n": "Warfarina sódica 5 mg comprimido",
+"droga": "Warfarina sódica",
+"forma": "Comprimido",
+"conc": "5 mg"
+},
+{
+"n": "Zolpidem 10 mg comprimido",
+"droga": "Zolpidem",
+"forma": "Comprimido",
+"conc": "10 mg"
+}
+]

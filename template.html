@@ -39,7 +39,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
 .chip[aria-pressed="true"]{border-color:var(--ink);background:color-mix(in srgb,var(--ink) 10%,var(--surface));font-weight:700}
 .chip:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
 .dot{width:16px;height:16px;border-radius:50%;flex:none}
-.d-v{background:var(--go)}.d-a{background:var(--warn)}.d-r{background:var(--stop)}
+.d-v{background:var(--go)}.d-a{background:var(--warn)}.d-r{background:var(--stop)}.d-g{background:var(--lamp-off);border:2px solid var(--muted)}
 .count{font-variant-numeric:tabular-nums;color:var(--muted)}
 .list{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .row{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;padding:16px 14px;border-top:1px solid var(--line)}
@@ -53,7 +53,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
 .name{font-weight:700;font-size:1.3rem;line-height:1.25;overflow-wrap:anywhere}
 .pres{color:var(--muted);font-size:1rem;overflow-wrap:anywhere}
 .status{align-self:flex-start;font-size:1.15rem;font-weight:700;padding:5px 12px;border-radius:8px}
-.s-v{background:var(--go-soft);color:var(--go)}.s-a{background:var(--warn-soft);color:var(--warn)}.s-r{background:var(--stop-soft);color:var(--stop)}
+.s-v{background:var(--go-soft);color:var(--go)}.s-a{background:var(--warn-soft);color:var(--warn)}.s-r{background:var(--stop-soft);color:var(--stop)}.s-g{background:color-mix(in srgb,var(--muted) 16%,transparent);color:var(--muted)}
+.status-nota{font-size:1rem;color:var(--muted)}
 .sug{list-style:none;margin:6px 0 0;padding:4px;background:var(--surface);border:2px solid var(--ink);border-radius:10px;display:flex;flex-direction:column;gap:2px}
 .opt{width:100%;text-align:left;font:inherit;background:transparent;color:var(--fg);border:0;border-radius:7px;padding:14px 12px;cursor:pointer;display:flex;flex-direction:column;gap:2px;min-height:52px}
 .opt:hover,.opt:focus-visible{background:color-mix(in srgb,var(--ink) 12%,transparent);outline:none}
@@ -113,9 +114,10 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
   <section class="guide">
     <h2>Qué significa cada color</h2>
     <dl>
-      <dt><span class="dot d-v"></span></dt><dd><b>Disponible.</b> Hay stock suficiente para las próximas semanas.</dd>
+      <dt><span class="dot d-v"></span></dt><dd><b>Disponible.</b> Hay stock suficiente para los próximos días.</dd>
       <dt><span class="dot d-a"></span></dt><dd><b>Stock bajo.</b> Quedan pocas unidades. Te recomendamos retirarlo pronto.</dd>
       <dt><span class="dot d-r"></span></dt><dd><b>Sin stock.</b> Por el momento no hay. Consultá en la farmacia cuándo se repone.</dd>
+      <dt><span class="dot d-g"></span></dt><dd><b>Sin disponibilidad actual.</b> Está en el listado oficial pero no hay en este momento. Consultá en la farmacia.</dd>
     </dl>
     <p class="note">La información se actualiza de lunes a viernes, cada hora entre las 8 y las 12. Para retirar un medicamento necesitás tu receta vigente. El stock puede cambiar durante el día.</p>
   </section>
@@ -126,7 +128,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
 (function(){
   var D={};try{D=JSON.parse(document.getElementById('data').textContent)}catch(e){D={items:[]}}
   var items=(D.items||[]).slice().sort(function(a,b){return a.n.localeCompare(b.n,'es')});
-  var label={v:'Disponible',a:'Stock bajo',r:'Sin stock'};
+  var label={v:'Disponible',a:'Stock bajo',r:'Sin stock',g:'Sin disponibilidad actual'};
   var norm=function(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')};
   var byId={};
   items.forEach(function(it){it._k=norm(it.n+' '+(it.d||''));it._id=norm(it.n+'|'+(it.d||''));byId[it._id]=it});
@@ -165,7 +167,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
       li.querySelector('.name').textContent=i.n;
       var p=li.querySelector('.pres'); if(i.d) p.textContent=i.d; else p.remove();
       var s=li.querySelector('.status');
-      if(i.e){s.textContent=label[i.e];s.className='status s-'+i.e}else{s.textContent='Consultar en la farmacia';s.className='status'}
+      if(i.e){s.textContent=label[i.e];s.className='status s-'+i.e}else{s.textContent='Consultar en la farmacia';s.className='status s-g'}
+      if(i.e==='g'){var nt=document.createElement('span');nt.className='status-nota';nt.textContent='No hay en este momento. Consultá en la farmacia.';s.after(nt)}
       var b=document.createElement('button');b.type='button';b.className='btn';b.textContent='Quitar';
       b.setAttribute('aria-label','Quitar '+i.n+' de mis consultas');
       b.addEventListener('click',function(){remove(m.id)});

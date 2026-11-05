@@ -22,6 +22,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from nombres import simplificar
+from cruce import mapear
 
 # ---------------- Configuración ----------------
 DIAS_AMARILLO = 10          # menos de esto = stock bajo
@@ -29,8 +30,7 @@ DIAS_CONSUMO = 90           # ventana para el consumo promedio
 # Tipos de movimiento que cuentan como consumo/dispensa (se buscan como texto, sin acentos)
 TIPOS_CONSUMO = ["egreso", "salida", "consumo", "dispens", "entrega"]
 # Palabras en el genérico/descripción para excluir de la página (descartables, etc.)
-EXCLUIR = ["jeringa", "aguja", "gasa", "guante", "cateter", "sonda", "apósito", "aposito",
-           "algodon", "algodón", "venda", "tira reactiva", "lanceta", "barbijo", "descartable"]
+EXCLUIR = ["gasa", "guante", "cateter", "sonda", "algodon", "algodón", "venda", "barbijo", "descartable"]
 TZ = timezone(timedelta(hours=-3))
 # ------------------------------------------------
 
@@ -148,7 +148,7 @@ def procesar(stock_path, mov_path):
     return list(unicos.values())
 
 
-EXCLUIR += ["reflectometro", "lapicera de administracion", "aerocamara", "aerospacer", "repelente", "dispensador"]
+EXCLUIR += ["reflectometro", "lapicera de administracion", "repelente", "dispensador", "articaina", "adrenalina"]
 
 RUIDO = [
     r"producto que contiene exactamente",
@@ -179,31 +179,57 @@ def nombre_paciente(gen):
     return nombre
 
 
-def procesar_crudo(path):
-    """Archivo extraído de la web de farmacia: codigo|stock|consumo_90d|generico|articulo (una línea por artículo)."""
+def estado(stock, cons):
+    diario = cons / DIAS_CONSUMO
+    if stock <= 0:
+        return "r"
+    if diario > 0 and stock / diario < DIAS_AMARILLO:
+        return "a"
+    return "v"
+
+
+def procesar_crudo(path, vademecum_path=None):
+    """Archivo extraído de la web de farmacia: codigo|stock|consumo_90d|generico|articulo (una línea por artículo).
+    Con el vademécum: muestra todo el listado de Nivel 1; lo que no tiene stock ni movimientos queda en gris ("g")."""
     grupos = {}
     for linea in Path(path).read_text(encoding="utf-8").splitlines():
         partes = linea.split("|")
         if len(partes) < 4:
             continue
-        _, stock, cons, gen = partes[0], numero(partes[1]), numero(partes[2]), partes[3]
+        stock, cons, gen = numero(partes[1]), numero(partes[2]), partes[3]
         if not gen.strip() or excluido(gen):
             continue
         nombre = simplificar(gen)
-        g = grupos.setdefault(norm(nombre), {"n": nombre, "stock": 0.0, "cons": 0.0})
+        g = grupos.setdefault(nombre, {"stock": 0.0, "cons": 0.0})
         g["stock"] += stock
         g["cons"] += max(cons, 0)
+    vpath = Path(vademecum_path) if vademecum_path else AQUI / "vademecum.json"
+    if not vpath.exists():
+        return [{"n": k, "d": "", "e": estado(g["stock"], g["cons"])} for k, g in grupos.items()]
+    vade = json.loads(vpath.read_text(encoding="utf-8"))
+    mapa = mapear(list(grupos), vade)
+    tot, extras = {}, {}
+    for k, g in grupos.items():
+        destino = mapa.get(k)
+        t = (tot if destino else extras).setdefault(destino or k, {"stock": 0.0, "cons": 0.0})
+        t["stock"] += g["stock"]; t["cons"] += g["cons"]
     items = []
-    for g in grupos.values():
-        diario = g["cons"] / DIAS_CONSUMO
-        if g["stock"] <= 0:
-            e = "r"
-        elif diario > 0 and g["stock"] / diario < DIAS_AMARILLO:
-            e = "a"
+    for v in vade:
+        t = tot.get(v["n"])
+        if not t or (t["stock"] <= 0 and t["cons"] <= 0):
+            items.append({"n": v["n"], "d": "", "e": "g"})
         else:
-            e = "v"
-        items.append({"n": g["n"], "d": "", "e": e, "_dias": round(g["stock"] / diario) if diario else None})
-    return items
+            items.append({"n": v["n"], "d": "", "e": estado(t["stock"], t["cons"])})
+    vistos = {i["n"] for i in items}
+    for k, t in extras.items():
+        if k in vistos or (t["stock"] <= 0 and t["cons"] <= 0):
+            continue
+        items.append({"n": k, "d": "", "e": estado(t["stock"], t["cons"])})
+    # sin duplicados de nombre
+    unicos = {}
+    for i in items:
+        unicos.setdefault(i["n"], i)
+    return list(unicos.values())
 
 
 EJEMPLO = [
@@ -232,8 +258,6 @@ def main():
 
     if a.crudo:
         items, ejemplo = procesar_crudo(a.crudo), False
-        for i in items:
-            i.pop("_dias", None)
     elif a.ejemplo:
         items, ejemplo = [{"n": n, "d": d, "e": e} for n, d, e in EJEMPLO], True
     else:
@@ -253,8 +277,8 @@ def main():
                 '<style>html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{margin:0}[hidden]{display:none!important}</style>\n'
                 '</head>\n<body>\n' + html + '\n</body>\n</html>\n')
     Path(a.salida).write_text(html, encoding="utf-8")
-    c = {k: sum(1 for i in items if i["e"] == k) for k in "var"}
-    print(f"OK {len(items)} medicamentos | verde {c['v']} | amarillo {c['a']} | rojo {c['r']} -> {a.salida}")
+    c = {k: sum(1 for i in items if i["e"] == k) for k in "vargs"}
+    print(f"OK {len(items)} medicamentos | verde {c['v']} | amarillo {c['a']} | rojo {c['r']} | gris {c['g']} -> {a.salida}")
 
 
 if __name__ == "__main__":
