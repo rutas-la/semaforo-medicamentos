@@ -148,7 +148,7 @@ def procesar(stock_path, mov_path):
     return list(unicos.values())
 
 
-EXCLUIR += ["reflectometro", "lapicera", "aerocamara", "aerospacer", "repelente", "dispensador"]
+EXCLUIR += ["reflectometro", "lapicera de administracion", "aerocamara", "aerospacer", "repelente", "dispensador"]
 
 RUIDO = [
     r"producto que contiene exactamente",
