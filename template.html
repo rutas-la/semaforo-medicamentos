@@ -26,6 +26,7 @@ body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:17
 header{display:flex;flex-direction:column;gap:6px}
 h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3rem);line-height:1.1;margin:0;text-wrap:balance;color:var(--fg)}
 .sub{margin:0;color:var(--muted);max-width:60ch}
+.eyebrow{margin:0;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
 .stamp{font-size:.88rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .stamp b{color:var(--fg)}
 .example{background:var(--warn-soft);color:var(--fg);border:1px solid var(--warn);border-radius:8px;padding:10px 14px;font-size:.92rem}
@@ -84,6 +85,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
 
 <div class="wrap">
   <header>
+    <p class="eyebrow">Farmacia CESAC 21</p>
     <h1>¿Hay stock de mi medicamento?</h1>
     <p class="sub">Escribí el nombre genérico de tu medicamento y elegilo de la lista. Podés consultar hasta 6.</p>
     <p class="stamp" id="stamp"></p>
