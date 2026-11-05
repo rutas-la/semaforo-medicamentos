@@ -226,6 +226,7 @@ def main():
     ap.add_argument("--salida", default="index.html")
     ap.add_argument("--plantilla", default=str(AQUI / "template.html"))
     ap.add_argument("--ejemplo", action="store_true")
+    ap.add_argument("--fragmento", action="store_true", help="sin <html>/<head> (para la vista previa en Claude)")
     ap.add_argument("--crudo", help="archivo codigo|stock|consumo|generico|articulo extraído de la web de farmacia")
     a = ap.parse_args()
 
@@ -245,6 +246,12 @@ def main():
     data = {"actualizado": datetime.now(TZ).isoformat(timespec="minutes"), "ejemplo": ejemplo, "items": items}
     js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     html = Path(a.plantilla).read_text(encoding="utf-8").replace("/*__DATA__*/", js)
+    if not a.fragmento:
+        # documento completo para GitHub Pages: sin la etiqueta viewport el celular muestra la página achicada
+        html = ('<!doctype html>\n<html lang="es">\n<head>\n<meta charset="utf-8">\n'
+                '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+                '<style>html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{margin:0}[hidden]{display:none!important}</style>\n'
+                '</head>\n<body>\n' + html + '\n</body>\n</html>\n')
     Path(a.salida).write_text(html, encoding="utf-8")
     c = {k: sum(1 for i in items if i["e"] == k) for k in "var"}
     print(f"OK {len(items)} medicamentos | verde {c['v']} | amarillo {c['a']} | rojo {c['r']} -> {a.salida}")
