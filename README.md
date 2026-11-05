@@ -27,7 +27,7 @@ Los reportes del sistema **nunca** se suben al repositorio (están en `.gitignor
 
 - `index.html`: la página publicada (generada, no editar a mano).
 - `template.html`: diseño de la página; los datos se insertan en `/*__DATA__*/`.
-- `vademecum.json`: listado oficial de medicamentos de Nivel 1 (CeSAC) versión 2026. Todo lo del listado aparece en la página; lo que no tiene stock ni movimientos se muestra en gris ("Sin disponibilidad actual"). Se regenera con `vademecum_build.py <archivo.xlsx>`.
+- `vademecum.json`: listado oficial de medicamentos de Nivel 1 (CeSAC) versión 2026. La página muestra solo este listado; lo que no tiene stock ni movimientos se muestra en gris ("Sin disponibilidad actual"). Se regenera con `vademecum_build.py <archivo.xlsx>`.
 - `cruce.py`: cruza los nombres de SIGEHOS con el vademécum (con una tabla de ajustes manuales).
 - `nombres.py`: simplifica los nombres de SIGEHOS a droga + concentración + forma.
 - `generar_semaforo.py`: lee los reportes y genera `index.html`. Los umbrales y las palabras para excluir descartables se configuran al principio del archivo.

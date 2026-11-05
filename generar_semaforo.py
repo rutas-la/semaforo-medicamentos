@@ -221,10 +221,7 @@ def procesar_crudo(path, vademecum_path=None):
         else:
             items.append({"n": v["n"], "d": "", "e": estado(t["stock"], t["cons"])})
     vistos = {i["n"] for i in items}
-    for k, t in extras.items():
-        if k in vistos or (t["stock"] <= 0 and t["cons"] <= 0):
-            continue
-        items.append({"n": k, "d": "", "e": estado(t["stock"], t["cons"])})
+    # solo el vademécum de Nivel 1: lo que no está en el listado no se publica
     # sin duplicados de nombre
     unicos = {}
     for i in items:

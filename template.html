@@ -61,6 +61,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
 .opt-n{font-weight:700;font-size:1.15rem}
 .opt-d{font-size:1rem;color:var(--muted)}
 .hint{margin:8px 0 0;font-size:1rem;color:var(--muted)}
+.hint.fuera{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:10px;border:2px solid var(--stop);background:var(--stop-soft);color:var(--fg)}
+.hint.fuera strong{color:var(--stop);font-size:1.1rem;text-transform:uppercase;letter-spacing:.02em;line-height:1.25}
 .row.has-btn{grid-template-columns:auto 1fr auto}
 .btn{font:inherit;font-size:1rem;font-weight:700;padding:10px 14px;min-height:44px;border-radius:8px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;white-space:nowrap}
 .btn:hover{background:color-mix(in srgb,var(--ink) 10%,transparent)}
@@ -178,9 +180,13 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
 
   function suggest(){
     var t=norm(q.value.trim());sug.textContent='';
-    if(t.length<MINCH){sug.hidden=true;hint.hidden=t.length===0;hint.textContent='Escribí al menos '+MINCH+' letras.';return}
+    if(t.length<MINCH){sug.hidden=true;hint.className='hint';hint.hidden=t.length===0;hint.textContent='Escribí al menos '+MINCH+' letras.';return}
     var res=items.filter(function(i){return i._k.indexOf(t)>-1}).slice(0,MAXSUG);
-    if(!res.length){sug.hidden=true;hint.hidden=false;hint.textContent='No encontramos "'+q.value.trim()+'". Probá con el nombre genérico o consultá en la farmacia.';return}
+    if(!res.length){sug.hidden=true;hint.hidden=false;hint.className='hint fuera';hint.textContent='';
+      var t1=document.createElement('strong');t1.textContent='Medicamento fuera del vademécum de Atención Primaria de la Salud';
+      var t2=document.createElement('span');t2.textContent='"'+q.value.trim()+'" no está en el listado de medicamentos de los Centros de Salud (Nivel 1). Revisá que esté bien escrito y usá el nombre genérico (la droga), no la marca.';
+      hint.appendChild(t1);hint.appendChild(t2);return}
+    hint.className='hint';
     hint.hidden=true;
     res.forEach(function(i){
       var li=document.createElement('li');
