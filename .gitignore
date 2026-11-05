@@ -1,0 +1,4 @@
+reportes/
+*.xlsx
+*.xls
+__pycache__/
