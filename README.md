@@ -3,8 +3,8 @@
 Página pública para que los pacientes consulten si hay stock de su medicamento en la farmacia.
 Cada medicamento muestra un semáforo:
 
-- **Verde (Disponible):** cubre 15 días o más de consumo.
-- **Amarillo (Stock bajo):** cubre menos de 15 días.
+- **Verde (Disponible):** cubre 10 días o más de consumo.
+- **Amarillo (Stock bajo):** cubre menos de 10 días.
 - **Rojo (Sin stock):** stock en cero.
 
 La página no muestra cantidades. La página no muestra el listado completo: el paciente busca su medicamento y ve solo el estado de lo que consultó, acumulando hasta 6 consultas (quedan guardadas en su celular; la séptima reemplaza a la más vieja).

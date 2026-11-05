@@ -11,7 +11,7 @@ Uso:
 
 Criterio del semáforo (días de cobertura = stock / consumo diario promedio):
   rojo     -> stock <= 0
-  amarillo -> cobertura < DIAS_AMARILLO
+  amarillo -> cobertura < DIAS_AMARILLO (10 días)
   verde    -> cobertura >= DIAS_AMARILLO, o hay stock y no hubo consumo en el período
 """
 import argparse, json, re, sys, unicodedata
@@ -20,8 +20,11 @@ from pathlib import Path
 
 import pandas as pd
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from nombres import simplificar
+
 # ---------------- Configuración ----------------
-DIAS_AMARILLO = 15          # menos de esto = stock bajo
+DIAS_AMARILLO = 10          # menos de esto = stock bajo
 DIAS_CONSUMO = 90           # ventana para el consumo promedio
 # Tipos de movimiento que cuentan como consumo/dispensa (se buscan como texto, sin acentos)
 TIPOS_CONSUMO = ["egreso", "salida", "consumo", "dispens", "entrega"]
@@ -145,6 +148,64 @@ def procesar(stock_path, mov_path):
     return list(unicos.values())
 
 
+EXCLUIR += ["reflectometro", "lapicera", "aerocamara", "aerospacer", "repelente", "dispensador"]
+
+RUIDO = [
+    r"producto que contiene exactamente",
+    r"para administracion oral de liberacion convencional",
+    r"para administracion oral",
+    r"de liberacion convencional",
+    r"por cada",
+    r"envasado en blister de no mas de 25 unidades",
+]
+MINUS = {"mg", "mcg", "ml", "g", "ui", "u", "de", "y", "x", "con", "como", "al", "por", "en", "para"}
+
+
+def nombre_paciente(gen):
+    """'LOSARTAN DE 50 MG, POTASICO [COMPRIMIDO]' -> 'Losartan de 50 mg, potasico (comprimido)'."""
+    t = gen.strip()
+    forma = re.findall(r"\[([^\]]+)\]", t)
+    t = re.sub(r"\[[^\]]*\]", " ", t)
+    s = norm(t)
+    for r in RUIDO:
+        s = re.sub(r, " ", s)
+    s = re.sub(r"\s+", " ", s).strip(" ,.;")
+    palabras = s.split(" ")
+    out = [palabras[0].capitalize()] + [p if p in MINUS else p for p in palabras[1:]]
+    nombre = " ".join(out)
+    f = norm(forma[-1]) if forma else ""
+    if f and f not in ("u",) and f not in nombre:
+        nombre += f" ({f})"
+    return nombre
+
+
+def procesar_crudo(path):
+    """Archivo extraído de la web de farmacia: codigo|stock|consumo_90d|generico|articulo (una línea por artículo)."""
+    grupos = {}
+    for linea in Path(path).read_text(encoding="utf-8").splitlines():
+        partes = linea.split("|")
+        if len(partes) < 4:
+            continue
+        _, stock, cons, gen = partes[0], numero(partes[1]), numero(partes[2]), partes[3]
+        if not gen.strip() or excluido(gen):
+            continue
+        nombre = simplificar(gen)
+        g = grupos.setdefault(norm(nombre), {"n": nombre, "stock": 0.0, "cons": 0.0})
+        g["stock"] += stock
+        g["cons"] += max(cons, 0)
+    items = []
+    for g in grupos.values():
+        diario = g["cons"] / DIAS_CONSUMO
+        if g["stock"] <= 0:
+            e = "r"
+        elif diario > 0 and g["stock"] / diario < DIAS_AMARILLO:
+            e = "a"
+        else:
+            e = "v"
+        items.append({"n": g["n"], "d": "", "e": e, "_dias": round(g["stock"] / diario) if diario else None})
+    return items
+
+
 EJEMPLO = [
     ("Enalapril", "10 mg comprimidos", "v"), ("Losartán", "50 mg comprimidos", "v"),
     ("Metformina", "850 mg comprimidos", "a"), ("Atorvastatina", "20 mg comprimidos", "v"),
@@ -165,9 +226,14 @@ def main():
     ap.add_argument("--salida", default="index.html")
     ap.add_argument("--plantilla", default=str(AQUI / "template.html"))
     ap.add_argument("--ejemplo", action="store_true")
+    ap.add_argument("--crudo", help="archivo codigo|stock|consumo|generico|articulo extraído de la web de farmacia")
     a = ap.parse_args()
 
-    if a.ejemplo:
+    if a.crudo:
+        items, ejemplo = procesar_crudo(a.crudo), False
+        for i in items:
+            i.pop("_dias", None)
+    elif a.ejemplo:
         items, ejemplo = [{"n": n, "d": d, "e": e} for n, d, e in EJEMPLO], True
     else:
         if not a.stock:
