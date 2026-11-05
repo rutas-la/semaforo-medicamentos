@@ -7,7 +7,7 @@ Cada medicamento muestra un semáforo:
 - **Amarillo (Stock bajo):** cubre menos de 15 días.
 - **Rojo (Sin stock):** stock en cero.
 
-La página no muestra cantidades. Cada paciente puede guardar hasta 6 medicamentos en "Mis medicamentos" (queda guardado en su celular).
+La página no muestra cantidades. La página no muestra el listado completo: el paciente busca su medicamento y ve solo el estado de lo que consultó, acumulando hasta 6 consultas (quedan guardadas en su celular; la séptima reemplaza a la más vieja).
 
 ## Cómo se actualiza
 

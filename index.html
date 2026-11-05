@@ -53,7 +53,12 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
 .pres{color:var(--muted);font-size:.92rem;overflow-wrap:anywhere}
 .status{align-self:flex-start;font-size:.88rem;font-weight:700;padding:3px 10px;border-radius:6px}
 .s-v{background:var(--go-soft);color:var(--go)}.s-a{background:var(--warn-soft);color:var(--warn)}.s-r{background:var(--stop-soft);color:var(--stop)}
-.empty{padding:28px 16px;text-align:center;color:var(--muted)}
+.sug{list-style:none;margin:6px 0 0;padding:4px;background:var(--surface);border:2px solid var(--ink);border-radius:10px;display:flex;flex-direction:column;gap:2px}
+.opt{width:100%;text-align:left;font:inherit;background:transparent;color:var(--fg);border:0;border-radius:7px;padding:10px 12px;cursor:pointer;display:flex;flex-direction:column;gap:2px;min-height:44px}
+.opt:hover,.opt:focus-visible{background:color-mix(in srgb,var(--ink) 12%,transparent);outline:none}
+.opt-n{font-weight:700}
+.opt-d{font-size:.9rem;color:var(--muted)}
+.hint{margin:8px 0 0;font-size:.92rem;color:var(--muted)}
 .row.has-btn{grid-template-columns:auto 1fr auto}
 .btn{font:inherit;font-size:.9rem;font-weight:700;padding:8px 12px;border-radius:8px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;white-space:nowrap}
 .btn:hover{background:color-mix(in srgb,var(--ink) 10%,transparent)}
@@ -80,35 +85,27 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
 <div class="wrap">
   <header>
     <h1>¿Hay stock de mi medicamento?</h1>
-    <p class="sub">Buscá tu medicamento por nombre genérico para saber si hoy está disponible en la farmacia.</p>
+    <p class="sub">Escribí el nombre genérico de tu medicamento y elegilo de la lista. Podés consultar hasta 6.</p>
     <p class="stamp" id="stamp"></p>
   </header>
 
   <div class="example" id="example" hidden>Estos datos son de ejemplo. La información real aparece después de la primera actualización automática.</div>
 
-  <section class="mine" aria-labelledby="mine-t">
-    <div class="mine-head">
-      <h2 id="mine-t">Mis medicamentos</h2>
-      <span class="slots" id="slots"></span>
-    </div>
-    <p class="mine-empty" id="mine-empty">Agregá hasta 6 medicamentos con el botón "Agregar" y vas a ver su estado acá cada vez que entres desde este celular.</p>
-    <ul class="list" id="mine-list" aria-live="polite" hidden></ul>
-    <p class="limit" id="limit" hidden>Ya tenés 6 medicamentos en tu lista. Quitá uno para agregar otro.</p>
-  </section>
-
   <div class="search">
     <label for="q">Nombre del medicamento</label>
-    <input id="q" type="search" autocomplete="off" placeholder="Ej.: enalapril, metformina…">
+    <input id="q" type="search" autocomplete="off" placeholder="Ej.: enalapril, metformina…" aria-controls="sug">
+    <ul class="sug" id="sug" role="listbox" hidden></ul>
+    <p class="hint" id="hint" hidden></p>
   </div>
 
-  <div class="legend" role="group" aria-label="Filtrar por estado">
-    <button class="chip" id="f-all" data-f="" aria-pressed="true">Todos <span class="count" id="c-all"></span></button>
-    <button class="chip" id="f-v" data-f="v" aria-pressed="false"><span class="dot d-v"></span>Disponible <span class="count" id="c-v"></span></button>
-    <button class="chip" id="f-a" data-f="a" aria-pressed="false"><span class="dot d-a"></span>Stock bajo <span class="count" id="c-a"></span></button>
-    <button class="chip" id="f-r" data-f="r" aria-pressed="false"><span class="dot d-r"></span>Sin stock <span class="count" id="c-r"></span></button>
-  </div>
-
-  <ul class="list" id="list" aria-live="polite"></ul>
+  <section class="mine" aria-labelledby="mine-t">
+    <div class="mine-head">
+      <h2 id="mine-t">Mis consultas</h2>
+      <span class="slots" id="slots"></span>
+    </div>
+    <p class="mine-empty" id="mine-empty">Todavía no consultaste ningún medicamento. Buscalo arriba y su estado aparece acá.</p>
+    <ul class="list" id="mine-list" aria-live="polite" hidden></ul>
+  </section>
 
   <section class="guide">
     <h2>Qué significa cada color</h2>
@@ -121,91 +118,79 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
   </section>
 </div>
 
-<script id="data" type="application/json">{"actualizado": "2026-11-04T21:25-03:00", "ejemplo": true, "items": [{"n": "Enalapril", "d": "10 mg comprimidos", "e": "v"}, {"n": "Losartán", "d": "50 mg comprimidos", "e": "v"}, {"n": "Metformina", "d": "850 mg comprimidos", "e": "a"}, {"n": "Atorvastatina", "d": "20 mg comprimidos", "e": "v"}, {"n": "Levotiroxina", "d": "100 mcg comprimidos", "e": "v"}, {"n": "Omeprazol", "d": "20 mg cápsulas", "e": "v"}, {"n": "Amlodipina", "d": "5 mg comprimidos", "e": "r"}, {"n": "Hidroclorotiazida", "d": "25 mg comprimidos", "e": "v"}, {"n": "Insulina NPH", "d": "100 UI/ml frasco ampolla", "e": "a"}, {"n": "Salbutamol", "d": "100 mcg aerosol", "e": "v"}, {"n": "Clonazepam", "d": "0,5 mg comprimidos", "e": "v"}, {"n": "Carbamazepina", "d": "200 mg comprimidos", "e": "a"}, {"n": "Ácido acetilsalicílico", "d": "100 mg comprimidos", "e": "v"}, {"n": "Furosemida", "d": "40 mg comprimidos", "e": "v"}, {"n": "Glibenclamida", "d": "5 mg comprimidos", "e": "r"}, {"n": "Atenolol", "d": "50 mg comprimidos", "e": "v"}, {"n": "Sertralina", "d": "50 mg comprimidos", "e": "v"}, {"n": "Valproato de sodio", "d": "500 mg comprimidos", "e": "a"}]}</script>
+<script id="data" type="application/json">{"actualizado": "2026-11-04T21:44-03:00", "ejemplo": true, "items": [{"n": "Enalapril", "d": "10 mg comprimidos", "e": "v"}, {"n": "Losartán", "d": "50 mg comprimidos", "e": "v"}, {"n": "Metformina", "d": "850 mg comprimidos", "e": "a"}, {"n": "Atorvastatina", "d": "20 mg comprimidos", "e": "v"}, {"n": "Levotiroxina", "d": "100 mcg comprimidos", "e": "v"}, {"n": "Omeprazol", "d": "20 mg cápsulas", "e": "v"}, {"n": "Amlodipina", "d": "5 mg comprimidos", "e": "r"}, {"n": "Hidroclorotiazida", "d": "25 mg comprimidos", "e": "v"}, {"n": "Insulina NPH", "d": "100 UI/ml frasco ampolla", "e": "a"}, {"n": "Salbutamol", "d": "100 mcg aerosol", "e": "v"}, {"n": "Clonazepam", "d": "0,5 mg comprimidos", "e": "v"}, {"n": "Carbamazepina", "d": "200 mg comprimidos", "e": "a"}, {"n": "Ácido acetilsalicílico", "d": "100 mg comprimidos", "e": "v"}, {"n": "Furosemida", "d": "40 mg comprimidos", "e": "v"}, {"n": "Glibenclamida", "d": "5 mg comprimidos", "e": "r"}, {"n": "Atenolol", "d": "50 mg comprimidos", "e": "v"}, {"n": "Sertralina", "d": "50 mg comprimidos", "e": "v"}, {"n": "Valproato de sodio", "d": "500 mg comprimidos", "e": "a"}]}</script>
 <script>
 (function(){
   var D={};try{D=JSON.parse(document.getElementById('data').textContent)}catch(e){D={items:[]}}
   var items=(D.items||[]).slice().sort(function(a,b){return a.n.localeCompare(b.n,'es')});
   var label={v:'Disponible',a:'Stock bajo',r:'Sin stock'};
-  var norm=function(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')};
-  items.forEach(function(it){it._k=norm(it.n+' '+(it.d||''))});
-  var filter='', q=document.getElementById('q'), list=document.getElementById('list');
+  var norm=function(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')};
+  var byId={};
+  items.forEach(function(it){it._k=norm(it.n+' '+(it.d||''));it._id=norm(it.n+'|'+(it.d||''));byId[it._id]=it});
+  var MAX=6, KEY='semaforo-mis-consultas', MINCH=3, MAXSUG=8;
+  var q=document.getElementById('q'), sug=document.getElementById('sug'), hint=document.getElementById('hint');
 
   if(D.ejemplo) document.getElementById('example').hidden=false;
-  var st=document.getElementById('stamp');
   if(D.actualizado){
-    var dt=new Date(D.actualizado);
-    var f=dt.toLocaleString('es-AR',{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',timeZone:'America/Argentina/Buenos_Aires'});
-    st.innerHTML='Última actualización: <b></b>';st.querySelector('b').textContent=f;
+    var f=new Date(D.actualizado).toLocaleString('es-AR',{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',timeZone:'America/Argentina/Buenos_Aires'});
+    var st=document.getElementById('stamp');st.innerHTML='Última actualización: <b></b>';st.querySelector('b').textContent=f;
   }
-  ['v','a','r'].forEach(function(e){document.getElementById('c-'+e).textContent=items.filter(function(i){return i.e===e}).length});
-  document.getElementById('c-all').textContent=items.length;
 
-  var MAX=6, KEY='semaforo-mis-medicamentos';
-  items.forEach(function(it){it._id=norm(it.n+'|'+(it.d||''))});
-  var byId={};items.forEach(function(it){byId[it._id]=it});
   var mine=[];
   try{mine=JSON.parse(localStorage.getItem(KEY)||'[]');if(!Array.isArray(mine))mine=[]}catch(e){mine=[]}
   mine=mine.filter(function(m){return m&&m.id}).slice(0,MAX);
   function save(){try{localStorage.setItem(KEY,JSON.stringify(mine))}catch(e){}}
-  function isMine(id){return mine.some(function(m){return m.id===id})}
-  function toggle(it){
-    if(isMine(it._id)){mine=mine.filter(function(m){return m.id!==it._id})}
-    else{if(mine.length>=MAX){document.getElementById('limit').hidden=false;return}
-      mine.push({id:it._id,n:it.n,d:it.d||''})}
-    document.getElementById('limit').hidden=true;
-    save();renderMine();render();
+
+  function add(it){
+    mine=mine.filter(function(m){return m.id!==it._id});
+    mine.unshift({id:it._id,n:it.n,d:it.d||''});
+    if(mine.length>MAX) mine=mine.slice(0,MAX);
+    save();q.value='';sug.hidden=true;hint.hidden=true;renderMine();q.focus();
   }
-  function makeRow(i,withBtn){
-    var li=document.createElement('li');li.className='row'+(withBtn?' has-btn':'');
-    li.innerHTML='<div class="light" aria-hidden="true"><span class="lamp l1"></span><span class="lamp l2"></span><span class="lamp l3"></span></div><div class="info"><span class="name"></span><span class="pres"></span><span class="status"></span></div>';
-    li.querySelector('.light').setAttribute('data-e',i.e||'');
-    li.querySelector('.name').textContent=i.n;
-    var p=li.querySelector('.pres'); if(i.d) p.textContent=i.d; else p.remove();
-    var s=li.querySelector('.status');
-    if(i.e){s.textContent=label[i.e];s.className='status s-'+i.e}else{s.textContent='Consultar en la farmacia';s.className='status'}
-    if(withBtn){
-      var b=document.createElement('button');b.type='button';b.className='btn';
-      var on=isMine(i._id);
-      b.textContent=on?'Quitar':'Agregar';if(on)b.classList.add('on');
-      b.setAttribute('aria-label',(on?'Quitar ':'Agregar ')+i.n+(on?' de':' a')+' mis medicamentos');
-      if(!on&&mine.length>=MAX)b.disabled=true;
-      b.addEventListener('click',function(){toggle(i)});
-      li.appendChild(b);
-    }
-    return li;
-  }
+  function remove(id){mine=mine.filter(function(m){return m.id!==id});save();renderMine()}
+
   function renderMine(){
     var ml=document.getElementById('mine-list');ml.textContent='';
     document.getElementById('slots').textContent=mine.length+' de '+MAX;
     document.getElementById('mine-empty').hidden=mine.length>0;
     ml.hidden=mine.length===0;
     mine.forEach(function(m){
-      var cur=byId[m.id]||{_id:m.id,n:m.n,d:m.d,e:''};
-      ml.appendChild(makeRow(cur,true));
+      var i=byId[m.id]||{n:m.n,d:m.d,e:''};
+      var li=document.createElement('li');li.className='row has-btn';
+      li.innerHTML='<div class="light" aria-hidden="true"><span class="lamp l1"></span><span class="lamp l2"></span><span class="lamp l3"></span></div><div class="info"><span class="name"></span><span class="pres"></span><span class="status"></span></div>';
+      li.querySelector('.light').setAttribute('data-e',i.e||'');
+      li.querySelector('.name').textContent=i.n;
+      var p=li.querySelector('.pres'); if(i.d) p.textContent=i.d; else p.remove();
+      var s=li.querySelector('.status');
+      if(i.e){s.textContent=label[i.e];s.className='status s-'+i.e}else{s.textContent='Consultar en la farmacia';s.className='status'}
+      var b=document.createElement('button');b.type='button';b.className='btn';b.textContent='Quitar';
+      b.setAttribute('aria-label','Quitar '+i.n+' de mis consultas');
+      b.addEventListener('click',function(){remove(m.id)});
+      li.appendChild(b);ml.appendChild(li);
     });
   }
 
-  function render(){
-    var t=norm(q.value.trim());
-    var res=items.filter(function(i){return (!filter||i.e===filter)&&(!t||i._k.indexOf(t)>-1)});
-    list.textContent='';
-    if(!res.length){
-      var li=document.createElement('li');li.className='empty';
-      li.textContent=t?'No encontramos "'+q.value.trim()+'". Probá con el nombre genérico o consultá en la farmacia.':'No hay medicamentos en este estado.';
-      list.appendChild(li);return;
-    }
-    var frag=document.createDocumentFragment();
-    res.forEach(function(i){frag.appendChild(makeRow(i,true))});
-    list.appendChild(frag);
+  function suggest(){
+    var t=norm(q.value.trim());sug.textContent='';
+    if(t.length<MINCH){sug.hidden=true;hint.hidden=t.length===0;hint.textContent='Escribí al menos '+MINCH+' letras.';return}
+    var res=items.filter(function(i){return i._k.indexOf(t)>-1}).slice(0,MAXSUG);
+    if(!res.length){sug.hidden=true;hint.hidden=false;hint.textContent='No encontramos "'+q.value.trim()+'". Probá con el nombre genérico o consultá en la farmacia.';return}
+    hint.hidden=true;
+    res.forEach(function(i){
+      var li=document.createElement('li');
+      var b=document.createElement('button');b.type='button';b.className='opt';b.setAttribute('role','option');
+      var n=document.createElement('span');n.className='opt-n';n.textContent=i.n;b.appendChild(n);
+      if(i.d){var d=document.createElement('span');d.className='opt-d';d.textContent=i.d;b.appendChild(d)}
+      b.addEventListener('click',function(){add(i)});
+      li.appendChild(b);sug.appendChild(li);
+    });
+    sug.hidden=false;
   }
-  q.addEventListener('input',render);
-  document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){
-    filter=b.getAttribute('data-f');
-    document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
-    render();
-  })});
+  q.addEventListener('input',suggest);
+  q.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){var first=sug.querySelector('.opt');if(first&&!sug.hidden){e.preventDefault();first.click()}}
+    if(e.key==='Escape'){sug.hidden=true}
+  });
   renderMine();
-  render();
 })();
 </script>
