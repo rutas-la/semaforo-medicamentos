@@ -22,7 +22,8 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from nombres import simplificar
-from cruce import mapear
+from cruce import mapear, familia
+from minimos import minimo
 
 # ---------------- Configuración ----------------
 DIAS_AMARILLO = 10          # menos de esto = stock bajo
@@ -219,7 +220,11 @@ def procesar_crudo(path, vademecum_path=None):
         if not t or (t["stock"] <= 0 and t["cons"] <= 0):
             items.append({"n": v["n"], "d": "", "e": "g"})
         else:
-            items.append({"n": v["n"], "d": "", "e": estado(t["stock"], t["cons"])})
+            e = estado(t["stock"], t["cons"])
+            # sin lo necesario para un tratamiento completo = sin stock
+            if e != "r" and t["stock"] < minimo(v["n"], familia(v["n"])):
+                e = "r"
+            items.append({"n": v["n"], "d": "", "e": e})
     vistos = {i["n"] for i in items}
     # solo el vademécum de Nivel 1: lo que no está en el listado no se publica
     # sin duplicados de nombre

@@ -5,7 +5,7 @@ Cada medicamento muestra un semáforo:
 
 - **Verde (Disponible):** cubre 10 días o más de consumo.
 - **Amarillo (Stock bajo):** cubre menos de 10 días.
-- **Rojo (Sin stock):** stock en cero.
+- **Rojo (Sin stock):** stock en cero, o menor al mínimo para entregar un tratamiento completo (ver `minimos.py`: antibióticos según esquema, insulinas 5 unidades, crónicos 30 comprimidos).
 - **Gris (Sin disponibilidad actual):** está en el vademécum de Nivel 1 pero no hay stock ni movimientos.
 
 La página no muestra cantidades. La página no muestra el listado completo: el paciente busca su medicamento y ve solo el estado de lo que consultó, acumulando hasta 6 consultas (quedan guardadas en su celular; la séptima reemplaza a la más vieja).
@@ -28,6 +28,7 @@ Los reportes del sistema **nunca** se suben al repositorio (están en `.gitignor
 - `index.html`: la página publicada (generada, no editar a mano).
 - `template.html`: diseño de la página; los datos se insertan en `/*__DATA__*/`.
 - `vademecum.json`: listado oficial de medicamentos de Nivel 1 (CeSAC) versión 2026. La página muestra solo este listado; lo que no tiene stock ni movimientos se muestra en gris ("Sin disponibilidad actual"). Se regenera con `vademecum_build.py <archivo.xlsx>`.
+- `minimos.py`: mínimo para dispensar de cada medicamento; por debajo se muestra "Sin stock".
 - `cruce.py`: cruza los nombres de SIGEHOS con el vademécum (con una tabla de ajustes manuales).
 - `nombres.py`: simplifica los nombres de SIGEHOS a droga + concentración + forma.
 - `generar_semaforo.py`: lee los reportes y genera `index.html`. Los umbrales y las palabras para excluir descartables se configuran al principio del archivo.
