@@ -90,8 +90,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
 <div class="wrap">
   <header>
     <p class="eyebrow">Farmacia CESAC 21</p>
-    <h1>¿Hay stock de mi medicamento?</h1>
-    <p class="sub">Escribí el nombre genérico de tu medicamento y elegilo de la lista. Podés consultar hasta 6.</p>
+    <h1>Disponibilidad de medicamentos</h1>
+    <p class="sub">Consultá la disponibilidad antes de prescribir. Escribí el nombre genérico y elegilo de la lista: podés tener hasta 6 consultas a la vista.</p>
     <p class="stamp" id="stamp"></p>
   </header>
 
@@ -117,11 +117,11 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
     <h2>Qué significa cada color</h2>
     <dl>
       <dt><span class="dot d-v"></span></dt><dd><b>Disponible.</b> Hay stock suficiente para los próximos días.</dd>
-      <dt><span class="dot d-a"></span></dt><dd><b>Stock bajo.</b> Quedan pocas unidades. Te recomendamos retirarlo pronto.</dd>
-      <dt><span class="dot d-r"></span></dt><dd><b>Sin stock.</b> Por el momento no hay. Consultá en la farmacia cuándo se repone.</dd>
-      <dt><span class="dot d-g"></span></dt><dd><b>Sin disponibilidad actual.</b> Está en el listado oficial pero no hay en este momento. Consultá en la farmacia.</dd>
+      <dt><span class="dot d-a"></span></dt><dd><b>Stock bajo.</b> Quedan pocas unidades y puede agotarse en los próximos días.</dd>
+      <dt><span class="dot d-r"></span></dt><dd><b>Sin stock.</b> No hay, o lo que queda no alcanza para un tratamiento completo. Considerá una alternativa del vademécum.</dd>
+      <dt><span class="dot d-g"></span></dt><dd><b>Sin disponibilidad actual.</b> Está en el vademécum de Nivel 1 pero no hay en este momento ni tuvo entregas recientes.</dd>
     </dl>
-    <p class="note">Para retirar un medicamento necesitás tu receta vigente. El stock puede cambiar durante el día.</p>
+    <p class="note">Información para profesionales prescriptores del CESAC 21. El stock puede cambiar durante el día; ante dudas, consultá con la farmacia.</p>
   </section>
 </div>
 
@@ -170,7 +170,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.7rem,5vw,2.3re
       var p=li.querySelector('.pres'); if(i.d) p.textContent=i.d; else p.remove();
       var s=li.querySelector('.status');
       if(i.e){s.textContent=label[i.e];s.className='status s-'+i.e}else{s.textContent='Consultar en la farmacia';s.className='status s-g'}
-      if(i.e==='g'){var nt=document.createElement('span');nt.className='status-nota';nt.textContent='No hay en este momento. Consultá en la farmacia.';s.after(nt)}
+      if(i.e==='g'){var nt=document.createElement('span');nt.className='status-nota';nt.textContent='No hay en este momento.';s.after(nt)}
       var b=document.createElement('button');b.type='button';b.className='btn';b.textContent='Quitar';
       b.setAttribute('aria-label','Quitar '+i.n+' de mis consultas');
       b.addEventListener('click',function(){remove(m.id)});
