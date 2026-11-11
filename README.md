@@ -12,7 +12,7 @@ La página no muestra cantidades. La página no muestra el listado completo: el 
 
 ## Cómo se actualiza
 
-Un agente programado, de lunes a viernes, cada hora entre las 8 y las 12:
+Por ahora se actualiza a pedido (pendiente automatizar):
 
 1. Exporta de SIGEHOS el **Listado de Stock** y la **Consulta de movimientos** (últimos 90 días).
 2. Ejecuta:
